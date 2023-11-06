@@ -1,3 +1,5 @@
 import ReactDOM from "react-dom";
+import React from "react"
 
-ReactDOM.render(<h2>Welcome to TechnoFunnel</h2>, document.getElementById("root"))
+ReactDOM.render(<h1>Hello</h1>, document.getElementById("root"));
+

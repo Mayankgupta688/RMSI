@@ -11,3 +11,6 @@ function impureFunction(a, b) {
 window.name = "technoFunnel"
 
 pureFunction(1, 2);
+
+function pureFunction(a, b) { }
+function impureFunction(a, b) { }
