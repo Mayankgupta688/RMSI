@@ -5,12 +5,11 @@ ReactDOM.render((
     <>
         <div className="container">
             <h1>Hello</h1>
-            <>
-                <p>Hello All</p>
-            </>
+            <p>Hello All</p>
         </div>
-        <>Hello</>
+        <>
+            <section>Hello</section>
+        </>
         <p></p>
     </>
 ), document.getElementById("root"));
-
