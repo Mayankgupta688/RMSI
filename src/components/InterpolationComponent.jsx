@@ -2,18 +2,24 @@ import { HeaderComponent } from "./HeaderComponent";
 import { ContentComponent } from "./ContentComponent";
 import { FooterComponent } from "./FooterComponent";
 
+// Props are immutable, props are contants, 
+// props are read-only - Constants.
+// Props containing Object and Arrays can be modified.
+// Always try to send the copy of data.
 
-// Props are immutable, props are contants, props are read-only - Constants.
 export default function InterpolationComponent(props) {
     debugger;
-    props.userDetails.company = "BlackRock";
+
+    // Should not be done..
+    // props.company = "BlackRock";
+
     props.salaryArray.push(40);
+    props.userDetails[0].company = "ABC";
+
     return (
         <>
-            <h1>The User Name is {props.userName}</h1>
-            <h2>User Company is {props.userDetails.company}</h2>
-            <h2>User Age is {+props.userAge + 110}</h2><hr /><br />
-            <h3>Salary Length {props.salaryArray.length}</h3>
+            <h2>User Company is {props.company}</h2>
+            <h3>Salary Length {props.userDetails[0].company}</h3>
             <HeaderComponent></HeaderComponent>
             <ContentComponent></ContentComponent>
             <FooterComponent></FooterComponent>

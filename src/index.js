@@ -1,19 +1,14 @@
 import ReactDOM from "react-dom";
-import InterpolationComponent from "./components/InterpolationComponent";
+import CounterComponent from "./components/CounterComponent";
+debugger;
+var counter = 1;
+setInterval(function () {
+    counter = counter + 1;
+    ReactDOM.render(<CounterComponent counter={counter}></CounterComponent>,
+        document.getElementById("root")
+    );
+}, 1000);
 
-var userDetails = {
-    userName: "Mayank Gupta",
-    company: "TechnoFunnel",
-    userAge: 35
-}
-
-var salaryArray = [10, 20, 30];
-
-ReactDOM.render(
-    <InterpolationComponent userDetails={userDetails} salaryArray={salaryArray} userName="Mayank Gupta" userAge="100"></InterpolationComponent>,
+ReactDOM.render(<CounterComponent counter={counter}></CounterComponent>,
     document.getElementById("root")
 );
-
-setInterval(function () {
-    alert(salaryArray);
-}, 5000)
