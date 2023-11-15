@@ -13,7 +13,6 @@ export default class CounterComponent extends Component {
         }
         
         setInterval(() => {
-            
             this.setState({
                 ...this.state,
                 currentTime: new Date().getHours() + " : " + new Date().getMinutes() + " : " + new Date().getSeconds()

@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
-import CounterComponentOther from "./stateFullComponents/CounterComponentOther";
+import StateIsAsyncComponent from "./stateFullComponents/StateIsAsyncComponent";
 
-ReactDOM.render(<CounterComponentOther></CounterComponentOther>,
+ReactDOM.render(<StateIsAsyncComponent></StateIsAsyncComponent>,
     document.getElementById("root")
 );
