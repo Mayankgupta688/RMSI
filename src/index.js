@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
-import StateIsAsyncComponent from "./stateFullComponents/StateIsAsyncComponent";
+import EventsComponent from "./stateFullComponents/EventsComponent";
 
-ReactDOM.render(<StateIsAsyncComponent></StateIsAsyncComponent>,
+ReactDOM.render(<EventsComponent></EventsComponent>,
     document.getElementById("root")
 );
