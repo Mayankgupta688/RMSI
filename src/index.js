@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
-import EventsComponent from "./stateFullComponents/EventsComponent";
+import Component from "./hooksComponent/UsingEffectsComponent";
 
-ReactDOM.render(<EventsComponent></EventsComponent>,
+ReactDOM.render(<Component userName="Mayank" userAge="10"></Component>,
     document.getElementById("root")
 );
