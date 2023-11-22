@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
-import Component from "./hooksComponent/UsingEffectsComponent";
+import Component from "./hooksComponent/WithoutContextComponent";
 
-ReactDOM.render(<Component userName="Mayank" userAge="10"></Component>,
+ReactDOM.render(<Component></Component>,
     document.getElementById("root")
 );
