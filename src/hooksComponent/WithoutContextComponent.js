@@ -11,6 +11,7 @@ export default function GrandParent() {
             setSurName(sessionStorage.getItem("surName"));
             setVillage(sessionStorage.getItem("village"))
         }
+        debugger;
     }, [])
     
     useEffect(() => {
