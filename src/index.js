@@ -1,5 +1,8 @@
 import ReactDOM from "react-dom";
-import Component from "./routingBasics/NestedRoutingComponent";
-ReactDOM.render(<Component></Component>,
-    document.getElementById("root")
-);
+import {ManagerComponent, LeadComponent} from "./HigherOrderComponents";
+ReactDOM.render((
+    <>
+        <ManagerComponent></ManagerComponent><hr/><hr/>
+        <LeadComponent></LeadComponent>
+    </>
+), document.getElementById("root"));
