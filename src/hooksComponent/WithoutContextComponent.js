@@ -1,10 +1,29 @@
 import { useState, createContext, useContext, useEffect, useRef } from "react";
 const LegacyContext = createContext();
 
+function Provider(props) {
+    let [store, setStore] = useState({
+        employees: [],
+        movies: [],
+        logins: []
+    });
+    
+    function updateData() {
+    }
+    
+    return (
+        <LegacyContext.Provider value={{ store: props, updateData: updateData, setStore: setStore }}>
+            <GrandParent></GrandParent>
+        </LegacyContext.Provider>
+    )
+}
+
 export default function GrandParent() {
     let [surName, setSurName] = useState("Gupta");
     let [village, setVillage] = useState("Haryana");
     let [color, setColor] = useState("red");
+    
+    useContext(LegacyContext)
     
     useEffect(() => {
         if (sessionStorage.getItem("surName") && sessionStorage.getItem("village")) {
